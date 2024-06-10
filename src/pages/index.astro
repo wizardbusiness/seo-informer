@@ -1,24 +1,48 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+const mainKeyword = "Soy Sauce - SEO Reference Guide";
 ---
 
 <Layout title="Soy Sauce - SEO reference guide for software developers.">
   <main>
-    <h1>Soy Sauce - <span class="text-gradient">SEO Reference Guide</span></h1>
-    <h2>Headers</h2>
-    <h3>Why to use them</h3>
-    <p>
-      Headers make it easier for your websites users to read and understand your content. They also
-      help search engines do the same thing! Search engines use headers to index your websites
-      content, and match it with what people search for.
-    </p>
-    <h3>What you should put inside them</h3>
-    <p>
-      Your H1 header should contain words that users might search for when trying to find your site.
-      Because this site is an SEO reference guide, and it is called Soy Sauce our H1 header says
-      'Soy Sauce - SEO Reference Guide'.
-    </p>
+    <h1>
+      <span class="text-gradient">Soy Sauce</span><br />
+      SEO Reference Guide
+    </h1>
+
+    <section>
+      <h2>Headers</h2>
+      <h3>Why to use them</h3>
+      <p>
+        Headers make it easier for your websites users to read and understand your content. They
+        also help search engines do the same thing! Search engines use headers to understand what
+        kind of content your website has and index it. When people search for something and it
+        matches the content in your headers, it makes it more likely that your website will be
+        listed in search results!
+      </p>
+      <h3>How to use them</h3>
+      <h4>H1</h4>
+      <p>
+        Each page on your website should have one H1 tag, that includes a main keyword and clearly
+        states the page's main topic. Your H1 header should contain words that users might search
+        for when trying to find your site. Because this site is an SEO reference guide, and it is
+        called Soy Sauce, our H1 header says '<b>{mainKeyword}</b>'.
+      </p>
+      <h4>H2</h4>
+      <p>
+        Use H2 headers for major sections. On this page, 'Headers' is a major section, so it uses an
+        H2 header. .
+      </p>
+      <h4>H3 -&gt; H6</h4>
+      <p>
+        Use H3 thru H6 headers for subsections within your major sections. The header for this
+        section 'H3 -&gt; H6' is an example of using an H4 header to denote a sub-section within a
+        section
+      </p>
+    </section>
+
     <ul role="list" class="link-card-grid">
       <Card
         href="https://docs.astro.build/"
@@ -50,31 +74,16 @@ import Card from "../components/Card.astro";
     padding: 1rem;
     width: 800px;
     max-width: calc(100% - 2rem);
-    color: white;
+    color: rgb(255, 245, 224);
     font-size: 20px;
     line-height: 1.6;
   }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 400%;
+    background-size: 250%;
     background-position: 0%;
   }
   .headers {
