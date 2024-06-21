@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const mainKeyword = "Soy Sauce - SEO Reference Guide";
+const mainKeyword = "Soy Sauce SEO";
 ---
 
 <Layout title="Soy Sauce - SEO reference guide for software developers.">
@@ -18,152 +18,151 @@ const mainKeyword = "Soy Sauce - SEO Reference Guide";
 
     <section>
       <h2>Headers</h2>
-      <h3>Why to use them</h3>
       <p>
-        Headers make it easier for your websites users to read and understand your content. They
-        also help search engines do the same thing! Search engines use headers to understand what
-        kind of content your website has and index it. When people search for something and it
-        matches the content in your headers, it makes it more likely that your website will be
-        listed in search results!
+        Headers break up sections on your webpage by topic, making it easier for users to read your
+        content. They also help search engines do the same thing! Search engines will look at your
+        headers and use them to help decide if your pages content is valuable as a search result. If
+        someone searches for something that matches the content in your headers, it makes it more
+        likely that your website will be listed in search results!
       </p>
-      <h3>How to use them</h3>
+      <h3>Types of headers and how to use them</h3>
       <h4>H1</h4>
       <p>
-        Each page on your website should have one H1 tag, that includes a main keyword and clearly
-        states the page's main topic. Your H1 header should contain words that users might search
-        for when trying to find your site. Because this site is an SEO reference guide, and it is
-        called Soy Sauce, our H1 header says '<b>{mainKeyword}</b>'.
-      </p>
-      <h4>H2</h4>
-      <p>
-        Use H2 headers for major sections. On this page, 'Headers' is a major section, so it uses an
-        H2 header. .
-      </p>
-      <h4>H3 -&gt; H6</h4>
-      <p>
-        Use H3 thru H6 headers for subsections within your major sections. The header for this
-        section 'H3 -&gt; H6' is an example of using an H4 header to denote a sub-section within a
-        section
+        The H1 header tells people what a page is about, and search engines use them the same way.
+        To make sure that your H1 header is search-engine friendly, make sure its subject is related
+        to the overall topic of your website, as well as the specific topic of the page. For
+        example, the H1 header for this page includes the word <b>SEO</b>, which is the topic of
+        this site, and the phrase <b>Reference Guide</b> which is the topic of this page.
       </p>
     </section>
-    <section>
-      <h2>Keywords</h2>
-      <p>Keywords are words or phrases that users may google related to your webpage's content.</p>
-      <h3>Why to use them</h3>
-      <p>
-        By including the right keywords on your page you increase the chances of it showing up in
-        search results.
-      </p>
-      <h3>How to use them</h3>
-      <h4>Types of keywords</h4>
-      <ul>
-        <li>
-          <b>Short-tail Keywords - </b>One or two words long, very broad eg - 'SEO', or 'content
-          optimization'. Will be difficult to stand out with, especially for smaller websites.
-        </li>
-        <li>
-          <b>Long-tail Keywords - </b>Longer, more specific phrases, usually 3+ words (ex. 'SEO
-          Reference-Guide for Developers'). More likely to stand out, but also more targeted at
-          users looking for a specific thing.
-        </li>
-        <li>
-          <b>Semantic Keywords - </b>Keywords that are related to the main keyword. Semantic
-          keywords for 'SEO' might include 'boost site traffic', 'local SEO', or 'organic traffic'.
-          Notice that semantic keywords do not need to mean exactly the same thing as the main
-          keyword, they must simply be related in some way.
-        </li>
-      </ul>
-      <h4>Keyword Match Types</h4>
-      <aside><b>A word on intention</b></aside>
-      <ul>
-        <li>
-          <b>Broad Match - </b>Your site may show on searches that <em>relate</em> to the intent of your
-          keyword
-        </li>
-        <li>
-          <b>Phrase Match - </b>Your site may show on searches that <em>include the intent </em> of your
-          keyword
-        </li>
-        <li>
-          <b>Exact Match - </b>Your site may show on searches that <em> have the same intent </em> as
-          your keyword
-        </li>
-      </ul>
-      <p></p>
-    </section>
+    <h4>H2</h4>
+    <p>
+      Use H2 headers for major sections. On this page, 'Headers' is a major section, so it uses an
+      H2 header.
+    </p>
+    <h4>H3 -&gt; H6</h4>
+    <p>
+      Use H3 thru H6 headers for subsections within your major sections. The header for this section
+      'H3 -&gt; H6' is an example of using an H4 header to denote a sub-section within a section
+    </p>
   </main>
-
-  <style>
-    main {
-      margin: auto;
-      padding: 1rem;
-      width: 800px;
-      max-width: calc(100% - 2rem);
-      color: rgb(255, 245, 224);
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    .gradient-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2%;
-      width: 80%;
-
-      position: relative;
-      padding: 2%;
-      box-sizing: border-box;
-
-      background: #13151a;
-      background-clip: padding-box;
-      border: solid 5px transparent;
-      border-radius: 1em;
-      position: relative;
-    }
-
-    .gradient-box:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      margin: -5px;
-
-      border-radius: 1em;
-      background: linear-gradient(to right, red, orange);
-    }
-
-    .soy-sauce-h1 {
-      background-image: linear-gradient(to right, red, orange);
-      /* border: 2px solid rgba(var(--accent-gradient), 100%); */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 250%;
-      background-position: 0%;
-      padding: 1%;
-    }
-
-    .seo-h1 {
-      font-size: 2rem;
-    }
-
-    .reference-guide-h2 {
-      font-style: italic;
-      font-size: 3em;
-      color: rgb(255, 193, 93);
-    }
-
-    .reference-guide-h2-inner {
-      font-style: italic;
-      color: rgb(255, 193, 93);
-      border: 2px solid rgb(255, 193, 93);
-      border-radius: 10px;
-      font-size: 4rem;
-      width: fit-content;
-      padding: 1%;
-    }
-  </style>
+  <section>
+    <h2>Keywords</h2>
+    <p>Keywords are words or phrases that users may google related to your webpage's content.</p>
+    <h3>Why to use them</h3>
+    <p>
+      By including the right keywords on your page you increase the chances of it showing up in
+      search results.
+    </p>
+    <h3>How to use them</h3>
+    <h4>Types of keywords</h4>
+    <ul>
+      <li>
+        <b>Short-tail Keywords - </b>One or two words long, very broad eg - 'SEO', or 'content
+        optimization'. Will be difficult to stand out with, especially for smaller websites.
+      </li>
+      <li>
+        <b>Long-tail Keywords - </b>Longer, more specific phrases, usually 3+ words (ex. 'SEO
+        Reference-Guide for Developers'). More likely to stand out, but also more targeted at users
+        looking for a specific thing.
+      </li>
+      <li>
+        <b>Semantic Keywords - </b>Keywords that are related to the main keyword. Semantic keywords
+        for 'SEO' might include 'boost site traffic', 'local SEO', or 'organic traffic'. Notice that
+        semantic keywords do not need to mean exactly the same thing as the main keyword, they must
+        simply be related in some way.
+      </li>
+    </ul>
+    <h4>Keyword Match Types</h4>
+    <aside><b>A word on intention</b></aside>
+    <ul>
+      <li>
+        <b>Broad Match - </b>Your site may show on searches that <em>relate</em> to the intent of your
+        keyword
+      </li>
+      <li>
+        <b>Phrase Match - </b>Your site may show on searches that <em>include the intent </em> of your
+        keyword
+      </li>
+      <li>
+        <b>Exact Match - </b>Your site may show on searches that <em> have the same intent </em> as your
+        keyword
+      </li>
+    </ul>
+    <p></p>
+  </section>
 </Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: rgb(255, 245, 224);
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .gradient-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 80%;
+
+    position: relative;
+    padding: 2%;
+    box-sizing: border-box;
+
+    background: #13151a;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    position: relative;
+  }
+
+  .gradient-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+
+    border-radius: 1em;
+    background: linear-gradient(to right, red, orange);
+  }
+
+  .soy-sauce-h1 {
+    background-image: linear-gradient(to right, red, orange);
+    /* border: 2px solid rgba(var(--accent-gradient), 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 250%;
+    background-position: 0%;
+    padding: 1%;
+  }
+
+  .seo-h1 {
+    font-size: 2rem;
+  }
+
+  .reference-guide-h2 {
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(255, 193, 93);
+  }
+
+  .reference-guide-h2-inner {
+    font-style: italic;
+    color: rgb(255, 193, 93);
+    border: 2px solid rgb(255, 193, 93);
+    border-radius: 10px;
+    font-size: 4rem;
+    width: fit-content;
+    padding: 1%;
+  }
+</style>
